@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package messaging;
+
+// User message
+message User {
+    string id = 1;
+    string username = 2;
+}
+
+// Message message
+message Message {
+    string id = 1;
+    string sender_id = 2;
+    string receiver_id = 3;
+    string content = 4;
+}
