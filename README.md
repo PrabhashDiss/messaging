@@ -80,6 +80,24 @@ In your Rust code, import Prost's runtime support as follows:
 use prost::Message as ProstMessage;
 ```
 
+## TCP Implementation
+
+For TCP communication between clients and servers, the application has been extended with TCP server and client implementations. The server listens for incoming connections, processes messages, and sends responses, while the client connects to the server, sends messages, and receives responses.
+
+Here's how to use the TCP implementation:
+
+1. Start the server:
+
+    ```bash
+    cargo run --bin server
+    ```
+
+2. Start the client:
+
+    ```bash
+    cargo run --bin client
+    ```
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
