@@ -4,7 +4,7 @@ This is a simple messaging application demonstrating the use of Protocol Buffers
 
 ## Overview
 
-The messaging application consists of protobuf definitions for users and messages. The `User` message defines the structure of a user, while the `Message` message defines the structure of a message exchanged between users.
+The messaging application consists of protobuf definitions for users and messages. The `User` message defines the structure of a user, while the `Message` message defines the structure of a message exchanged between users. Additionally, encoding and decoding functionality for User and Message structs has been added.
 
 ## Usage
 
@@ -70,6 +70,15 @@ The Rust code for working with protobuf messages is automatically generated from
     ```
 
 3. The generated Rust code will be placed in the `src/` directory and can be included in your Rust code as needed.
+
+## Importing Prost's Runtime Support
+
+In your Rust code, import Prost's runtime support as follows:
+
+```rust
+// Import Prost's runtime support
+use prost::Message as ProstMessage;
+```
 
 ## Contributing
 
