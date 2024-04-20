@@ -11,3 +11,15 @@ prost = "0.12"
 
 [build-dependencies]
 prost-build = "0.12"
+
+[[bin]]
+name = "messaging"
+path = "src/main.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
